@@ -23,8 +23,14 @@ To see full detail on a campaign (persons included)
 
 To choose a person and mark them as chosen; person data is returned
 
-    curl -d '' http://localhost:4000/choose/1
+    curl -X POST http://localhost:4000/choose/1
 
 ### Return Data & Errors
 
 All responses are json objects. If anything goes wrong, expect a string in the `error` key.
+
+## TODO
+
+  * CSV export
+  * Maybe an http import
+  * Like the whole front end
